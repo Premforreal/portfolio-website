@@ -1,7 +1,7 @@
 import React from "react";
 import portfolio from "../assets/portfolio/portfolio.png";
 import sorting from "../assets/portfolio/sorting.png";
-import BestReads from '../assets/portfolio/bestreads.png'
+import MernGoals from '../assets/portfolio/MernGoals.png'
 import mini from "../assets/portfolio/mini.png";
 import tailwind from '../assets/svg/tailwind.svg';
 import reactsvg from '../assets/svg/react.svg';
@@ -11,17 +11,18 @@ import javascript from '../assets/javascript.png';
 import html from '../assets/html.png';
 import css from '../assets/css.png';
 import express from '../assets/express.png';
+import daisyui from '../assets/svg/daisyui.svg';
 
 const Portfolio = ({checked}) => {
   const portfolios = [
     {
       id: 1,
-      src: BestReads,
-      title : 'bestreads',
-      demo : 'https://premforreal.github.io/bestreads/',
-      code : 'https://github.com/Premforreal/bestreads',
+      src: MernGoals,
+      title : 'MernGoals',
+      demo : 'https://premforreal.github.io/mern-Goals/',
+      code : 'https://github.com/Premforreal/mern-Goals#readme',
       stack:[reactsvg,node,express,mongodb],
-      description : 'This is a Goodreads clone with crud functionality made using MERN stack. Users can add, rate or even delete their books. Front-end is made using React, MUI and CSS. Back-end using Node.js, Express and MongoDB.'
+      description : 'A simple CRUD application with user authentication and authorization made with MERN stack. The backend is developed using nodejs, Express and Mongodb as database. The frontend is developed using react.'
     },
     {
       id: 2,
@@ -29,8 +30,8 @@ const Portfolio = ({checked}) => {
       title : 'Portfolio Website',
       demo : 'https://prem-react-portfolio.netlify.app/',
       code : 'https://github.com/Premforreal/React-portfolio',
-      stack:[reactsvg,tailwind],
-      description : "This portfolio website you are viewing is made using React.Js and tailwind-css. Click the 'demo' below to view the website or click on 'code' to go to its github repository.",  
+      stack:[reactsvg,tailwind, daisyui],
+      description : "This portfolio website you are viewing is made using React.Js, tailwind-css and Daisy Ui.",  
     },
     {
       id: 3,
@@ -75,16 +76,18 @@ const Portfolio = ({checked}) => {
                               <img src={src} alt="Shoes" className="rounded-xl"/>
                             </figure>
                             <p className="mt-2 md:text-2xl text-center font-bold text-sky-200 ">{title}</p>
-                            
+
                             <div className="flex center justify-center scale-75 md:scale-100">
-                              {stack.map(item=>(<div className="avatar m-4 mb-2 mt-0">
+                              {stack.map(item=>(<div className="avatar m-4 ">
                                                   <div className="w-10 rounded-full">
                                                     <img src={item} />
                                                   </div>
                                                 </div>
                                               ))}
                             </div>
-
+                            <div className="m-8 mt-0">
+                                <p>{description}</p>
+                            </div>
                             <div className="flex items-center justify-center space-x-8 pb-2">              
                               <a href={demo} target="_blank" rel="noreferrer ">
                                 <button className="btn btn-outline text-whitesmoke scale-75">Demo</button>

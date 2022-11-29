@@ -17,7 +17,7 @@ function Home({checked}){
           <div className="pt-20 md:pt-0">
               <h2 className="text-3xl sm:text-5xl font-bold"> Hello, I'm Prem Kumar</h2>
               <p className="text-3xl pt-4"><Typewriter options={
-                      {strings: ['Front-end Developer', 'MERN Stack developer','Python developer'],
+                      {strings: ['Back-end developer','Front-end Developer', 'MERN Stack developer','Python developer'],
                       autoStart: true,
                       loop: true,}}/></p>
           </div> 
