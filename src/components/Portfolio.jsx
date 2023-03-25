@@ -66,14 +66,13 @@ const Portfolio = ({checked}) => {
             Portfolio
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 px-12 sm:px-0 ">
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 px-2 sm:px-0 ">
           {portfolios.map(({ id, src, title , description,demo,code,stack, }) => ( 
-                  
                     <div key={id} className={`card card-compact w-100 m-0
-                                      ${checked ? 'bg-darkmode text-white' : 'bg-lightgrey text-whitesmoke' }`}>
+                                  ${checked ? 'bg-darkmode text-white' : 'bg-lightgrey text-whitesmoke' }`}>
                             
                             <figure className="p-2 pb-0 hover:shadow-2xl hover:scale-105 duration-200">
-                              <img src={src} alt="Shoes" className="rounded-xl"/>
+                              <img src={src} alt="image" className="rounded-xl"/>
                             </figure>
                             <p className="mt-2 md:text-2xl text-center font-bold text-sky-200 ">{title}</p>
 
@@ -90,10 +89,10 @@ const Portfolio = ({checked}) => {
                             </div>
                             <div className="flex items-center justify-center space-x-8 pb-2">              
                               <a href={demo} target="_blank" rel="noreferrer ">
-                                <button className="btn btn-outline text-whitesmoke scale-75">Demo</button>
+                                <button className="btn btn-outline text-whitesmoke ">Demo</button>
                               </a>
                               <a href={code} target="_blank" rel="noreferrer">
-                                <button className="btn btn-outline text-whitesmoke scale-75">Repo</button>
+                                <button className="btn btn-outline text-whitesmoke ">Repo</button>
                               </a>
                           </div>
                       </div>

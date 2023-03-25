@@ -45,7 +45,7 @@ const NavBar = ({ checked, onChangeSomeState }) => {
                     <a
                       href={href}
                       className={`flex  justify-between items-center  w-full ${style}  
-                      transition ease-in-out hover:-translate-y-1 hover:scale-110 `}
+                      transition ease-in-out hover:-translate-y-1`}
                       target="_blank"
                       rel="noreferrer"
                     >
