@@ -1,9 +1,13 @@
 import React from "react";
-import portfolio from "../assets/portfolio/portfolio.png";
 import sorting from "../assets/portfolio/sorting.png";
 import MernGoals from '../assets/portfolio/MernGoals.png'
 import mini from "../assets/portfolio/mini.png";
-import tailwind from '../assets/svg/tailwind.svg';
+import drum from '../assets/portfolio/drum.png'
+import admin from '../assets/portfolio/admin.png'
+import pass from '../assets/portfolio/pass.png'
+import todo from '../assets/portfolio/todo.png'
+import tictactoe from '../assets/portfolio/tictactoe.png'
+
 import reactsvg from '../assets/svg/react.svg';
 import node from '../assets/node.png';
 import mongodb from '../assets/mongodb.png';
@@ -11,7 +15,6 @@ import javascript from '../assets/javascript.png';
 import html from '../assets/html.png';
 import css from '../assets/css.png';
 import express from '../assets/express.png';
-import daisyui from '../assets/svg/daisyui.svg';
 
 const Portfolio = ({checked}) => {
   const portfolios = [
@@ -21,20 +24,38 @@ const Portfolio = ({checked}) => {
       title : 'MernGoals',
       demo : 'https://premforreal.github.io/mern-Goals/',
       code : 'https://github.com/Premforreal/mern-Goals#readme',
-      stack:[reactsvg,node,express,mongodb],
+      stack:[reactsvg,node,express,mongodb,css],
       description : 'A simple CRUD application with user authentication and authorization made with MERN stack. The backend is developed using nodejs, Express and Mongodb as database. The frontend is developed using react.'
     },
     {
       id: 2,
-      src: portfolio,
-      title : 'Portfolio Website',
-      demo : 'https://prem-react-portfolio.netlify.app/',
-      code : 'https://github.com/Premforreal/React-portfolio',
-      stack:[reactsvg,tailwind, daisyui],
-      description : "This portfolio website you are viewing is made using React.Js, tailwind-css and Daisy Ui.",  
+      src: admin,
+      title : 'Admin UI',
+      demo : 'https://premforreal.github.io/admin-ui/',
+      code : 'https://github.com/Premforreal/admin-ui',
+      stack:[reactsvg,javascript,css],
+      description : "This is a solution for Greektrust coding challenge that I successfully solved. Built a handy interface for admins to view user data from the API provided. Added helpful features like pagination, search, edit and delete user. Achieved 7 badges and an overall rating of 83 percent.",
     },
     {
       id: 3,
+      src: tictactoe,
+      title : 'Tic Tac Toe',
+      demo : 'https://premforreal.github.io/tic-tac-toe-react/',
+      code : 'https://github.com/Premforreal/tic-tac-toe-react',
+      stack:[reactsvg,javascript,css],
+      description : "This project is done using React and CSS. Tic-Tac-Toe is a classic game for two players where each player takes turns marking a grid of 3x3 squares with their X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.",  
+    },
+    {
+      id: 4,
+      src: todo,
+      title : 'To-do List',
+      demo : 'https://premforreal.github.io/react-to-do-list/',
+      code : 'https://github.com/Premforreal/react-to-do-list',
+      stack:[reactsvg,javascript,css],
+      description : "A simple to-do list web app developed using React. It provides simple UI to interact and perform basic operations like add or delete particular to-do and has option to mark as completed.",  
+    },
+    {
+      id: 5,
       src: sorting,
       title : 'Sorting Visualizer',
       demo : 'https://premforreal.github.io/javascript-sorting-visualizer/',
@@ -43,7 +64,7 @@ const Portfolio = ({checked}) => {
       description : 'A Web Project that helps in  visualizing some of the famous sorting algorithms like Mergesort, Selectionsort, Bubblesort, Insertionsort, Quicksort with variable speed and array size inputs.'
     },
  {
-      id: 4,
+      id: 6,
       src: mini,
       title : 'Front end mini challenges',
       demo : 'https://premforreal.github.io/mini-projects-links/',
@@ -51,6 +72,24 @@ const Portfolio = ({checked}) => {
       stack:  [javascript,css,html],
       description : 'These are a collection of 20 mini projects to sharpen HTML, CSS & JavaScript skills. Learnt DOM manipulation, events, array methods, modern styling and animations using CSS and many more along the course of this project(s)'
     },
+    {
+      id: 7,
+      src: pass,
+      title : 'Password strength checker',
+      demo : 'https://premforreal.github.io/Password-Strength-Checker/',
+      code : 'https://github.com/Premforreal/Password-Strength-Checker',
+      stack:  [javascript,css,html],
+      description : 'A front-end web app made using Javascript, Html and Css. It analyses the strength of the password. It is important to choose passwords wisely. Check how strong and secure is your password. Improve the strength of your password to stay safe.'
+    },
+    {
+      id: 8,
+      src: drum,
+      title : 'Drum kit',
+      demo : 'https://premforreal.github.io/Drumkit-web-app/',
+      code : 'https://github.com/Premforreal/Drumkit-web-app',
+      stack:  [javascript,css,html],
+      description : 'A front-end web app made using Javascript, Html and Css. It has different keys in the keyboard representing a certain musical instrument. When any of the key is clicked or pressed corresponding drum sound effect, & shows a visual key as feedback for the user.'
+    }
   ];
 
 
