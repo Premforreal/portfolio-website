@@ -9,6 +9,7 @@ import { SkillsComponent } from './pages/skills/skills.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { LayoutComponent } from './layout/layout.component';
+import { LightsaberDividerComponent } from './shared/components/lightsaber-divider/lightsaber-divider.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LayoutComponent } from './layout/layout.component';
     SkillsComponent,
     ProjectsComponent,
     ContactComponent,
-    LayoutComponent
+    LayoutComponent,
+    LightsaberDividerComponent
   ],
   imports: [
     BrowserModule,

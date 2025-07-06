@@ -1,0 +1,42 @@
+$blade-height: 12px;
+$blade-radius: $blade-height / 2;
+
+$colors: (
+  blue: #00008B,
+  red: #ff0000,
+  green: #00ff00,
+  purple: #c800ff
+);
+
+.lightsaber-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.hilt {
+  width: 40px;
+  height: $blade-height;
+  background: #555;
+  border: 2px solid #333;
+  border-radius: 3px 0 0 3px;
+}
+
+.blade {
+  height: $blade-height;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 0% $blade-radius $blade-radius 0%;
+  background-color: white;
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+
+  @each $name, $color in $colors {
+    &.#{$name} {
+      background-color: white;
+      box-shadow: 0 0 5px 2px #ffffff, 
+                  0 0 24px $color, 0 0 40px $color;
+    }
+  }
+}
