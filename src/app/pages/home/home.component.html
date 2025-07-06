@@ -39,12 +39,16 @@
         <li class="list-group-item" *ngFor="let job of experience">{{ job }}</li>
     </ul>
 </div>
-<div id="skills" class="container my-5">
-    <h2>Skills</h2>
-    <ul class="list-inline">
-        <li class="list-inline-item badge bg-secondary mx-1" *ngFor="let skill of skills">{{ skill }}</li>
-    </ul>
+<div id="skills" class="container my-5 text-center">
+  <h2 class="section-title">Force Abilities</h2>
+
+  <div class="skill-holo-wrap d-flex flex-wrap justify-content-center gap-3 mt-4">
+    <div *ngFor="let skill of skills" class="holo-badge">
+      {{ skill }}
+    </div>
+  </div>
 </div>
+
 <div id="contact" class="container my-5">
     <h2>Contact Me</h2>
     <p>If you would like to get in touch, please reach out via email or connect with me on social media.</p>
