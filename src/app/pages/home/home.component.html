@@ -1,1 +1,58 @@
-<p>home works!</p>
+<div id="hero" class="text-center py-5">
+    <div class="d-flex align-items-center justify-content-center">
+        <div>
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover my projects, skills, and experience.</p>
+        </div>
+        <img src="assets/Handcoding.svg" alt="Hero Image" class="w-50 h-50">
+    </div>
+</div>
+<div id="about" class="container my-5">
+    <div class="d-flex align-items-center justify-content-center">
+        <div>
+            <h2>About Me</h2>
+            <p>{{ aboutMe }}</p>
+            <a [routerLink]="['/about']" class="btn btn-outline-primary mt-2">Learn More</a>
+        </div>
+        <img src="assets/Checklist.svg" alt="About Me" class="w-50 h-50">
+    </div>
+</div>
+<div id="projects" class="container my-5">
+    <h2>Featured Projects</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4" *ngFor="let project of projects">
+            <div class="card h-100">
+                <img [src]="project.image" class="card-img-top" alt="{{ project.title }}">
+                <div class="card-body">
+                    <h3 class="card-title">{{ project.title }}</h3>
+                    <p class="card-text">{{ project.description }}</p>
+                    <a [routerLink]="['/projects', project.id]" class="btn btn-primary">Demo</a>
+                    <a [routerLink]="['/projects', project.id]" class="btn btn-primary">Repo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="experience" class="container my-5">
+    <h2>Experience</h2>
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let job of experience">{{ job }}</li>
+    </ul>
+</div>
+<div id="skills" class="container my-5">
+    <h2>Skills</h2>
+    <ul class="list-inline">
+        <li class="list-inline-item badge bg-secondary mx-1" *ngFor="let skill of skills">{{ skill }}</li>
+    </ul>
+</div>
+<div id="contact" class="container my-5">
+    <h2>Contact Me</h2>
+    <p>If you would like to get in touch, please reach out via email or connect with me on social media.</p>
+    <a href="mailto:{{ contactEmail }}" class="btn btn-success mb-3">Email Me</a>
+    <div id="social-links" class="d-flex gap-3">
+        <a href="{{ socialLinks.github }}" target="_blank" class="btn btn-dark">GitHub</a>
+        <a href="{{ socialLinks.linkedin }}" target="_blank" class="btn btn-primary">LinkedIn</a>
+        <a href="{{ socialLinks.twitter }}" target="_blank" class="btn btn-info text-white">Twitter</a>
+        <a href="{{ socialLinks.website }}" target="_blank" class="btn btn-secondary">Website</a>
+    </div>
+</div>
