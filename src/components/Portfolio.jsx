@@ -111,14 +111,14 @@ const Portfolio = ({checked}) => {
                                   ${checked ? 'bg-darkmode text-white' : 'bg-lightgrey text-whitesmoke' }`}>
                             
                             <figure className="p-2 pb-0 hover:shadow-2xl hover:scale-105 duration-200">
-                              <img src={src} alt="image" className="rounded-xl"/>
+                              <img src={src} alt={title} className="rounded-xl"/>
                             </figure>
                             <p className="mt-2 md:text-2xl text-center font-bold text-sky-200 ">{title}</p>
 
                             <div className="flex center justify-center scale-75 md:scale-100">
                               {stack.map(item=>(<div className="avatar m-4 ">
                                                   <div className="w-10 rounded-full">
-                                                    <img src={item} />
+                                                    <img src={item} alt="" />
                                                   </div>
                                                 </div>
                                               ))}

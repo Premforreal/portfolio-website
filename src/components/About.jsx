@@ -33,7 +33,7 @@ const About = ({checked}) => {
                         </p>
                   </div>
                 </div>
-                <img src={pencilsvg} className='invisible md:visible w-1/3 right-1 absolute'/>
+                <img src={pencilsvg} alt="" className='invisible md:visible w-1/3 right-1 absolute'/>
               </div>
       </div>
     </div>

@@ -21,7 +21,7 @@ function Home({checked}){
                       autoStart: true,
                       loop: true,}}/></p>
           </div> 
-          <img src={svg} className='md:w-1/2 h-3/4 w-1/1'/>
+          <img src={svg} alt="" className='md:w-1/2 h-3/4 w-1/1'/>
         </div>
     </div>
   );
