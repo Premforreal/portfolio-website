@@ -29,11 +29,16 @@ module.exports = {
       "css":"#2563eb",
       "html":"#fb923c",
       "js":"#facc15",
-      "python":"#fde047",
+      "typescript":"#3178C6",
       "react":"#22d3ee",
       "mongodb":"#22c55e",
       "mysql":"#0284c7",
       "node":"#65a30d",
+      "angular":"#dd1b16",
+      "aws":"#FF9900",
+      "jamstack":"#FF4088",
+      "azure":"#0072C6",
+      "loopback":"#3f5dff"
     }
   },
   plugins: [require("daisyui")],

@@ -1,79 +1,63 @@
 import React from "react";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import javascript from "../assets/javascript.png";
-import reactImage from "../assets/react.png";
-import mysql from "../assets/mysql.png";
-import mongodb from "../assets/mongodb.png";
-import Python from "../assets/Python.png";
+import angular from "../assets/angular.png";
 import nodejs from "../assets/node.png";
+import mongodb from "../assets/mongodb.png";
+import aws from "../assets/aws.png";
+import typescript from "../assets/typescript.png";
+import jamstack from "../assets/jamstack.png";
+import azure from "../assets/azuredevops.png";
+import loopback from "../assets/loopback4.svg";
 
 const Experience = ({checked}) => {
   const techs = [
     {
-      
       id: 1,
-      src: Python,
-      title: "Python",
-      style: "shadow-python",
-      
+      src: angular,
+      title: "Angular",
+      style: "shadow-angular",
     },
     {
       id: 2,
-      src: javascript,
-      title: "JavaScript",
-      style: "shadow-js",
-      
+      src: loopback,
+      title: "LoopBack 4",
+      style: "shadow-loopback",
     },
-
     {
       id: 3,
-      src: reactImage,
-      title: "React",
-      style: "shadow-react",
-    },
-    
-    {
-      id: 4,
       src: nodejs,
       title: "Node.js",
       style: "shadow-node",
-      
     },
-        
+    {
+      id: 4,
+      src: jamstack,
+      title: "Jamstack",
+      style: "shadow-jamstack",
+    },
     {
       id: 5,
-      src: mysql,
-      title: "MySQl",
-      style: "shadow-mysql",
-      
+      src: typescript,
+      title: "TypeScript",
+      style: "shadow-typescript",
     },
     {
       id: 6,
       src: mongodb,
       title: "MongoDB",
       style: "shadow-mongodb",
-      
     },
-
     {
       id: 7,
-      src: html,
-      title: "HTML",
-      style: "shadow-html",
-      
+      src: aws,
+      title: "AWS",
+      style: "shadow-aws",
     },
-    
     {
       id: 8,
-      src: css,
-      title: "CSS",
-      style: "shadow-css",
-     
-      
+      src: azure,
+      title: "Azure DevOps",
+      style: "shadow-azure",
     },
-
-  
   ];
 
   return (
