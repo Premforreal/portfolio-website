@@ -21,7 +21,7 @@ const About = ({checked}) => {
                       <div className="rounded-full bg-apple-green w-4 h-4 m-1"/>
                   </div>
                   <div className={`flex flex-col justify-center px-4 py-4 
-                                ${!checked ? 'text-black bg-whitesmoke' : 'text-white bg-lightergrey'}`}>
+                                ${!checked ? 'text-lightgrey bg-whitesmoke' : 'text-white bg-lightergrey'}`}>
                         <p className="font-mono font-semibold text-base text-left pr-8 pl-2 sm:px-0">
                               <p className="pt-4 pb-4 text-2xl">Hi 👋</p>
                               I'm Prem Kumar. I am an undergraduate student from NIT Warangal, India. <br/>
