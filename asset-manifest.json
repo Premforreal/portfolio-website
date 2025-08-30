@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.56a1c4a9.css",
-    "main.js": "/portfolio-website/static/js/main.24d4be17.js",
+    "main.css": "/portfolio-website/static/css/main.f7728a2f.css",
+    "main.js": "/portfolio-website/static/js/main.d9817521.js",
     "static/media/drum.png": "/portfolio-website/static/media/drum.bdbf1c9ae5a34af006ac.png",
     "static/media/MernGoals.png": "/portfolio-website/static/media/MernGoals.52f3005da293b1a3e6a9.png",
     "static/media/admin.png": "/portfolio-website/static/media/admin.9de0d1e43d71172633a8.png",
@@ -19,14 +19,14 @@
     "static/media/express.png": "/portfolio-website/static/media/express.39a0f4c3d981885c64f8.png",
     "static/media/javascript.png": "/portfolio-website/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "static/media/mysql.png": "/portfolio-website/static/media/mysql.67c48b012164d107eef0.png",
-    "static/media/react.svg": "/portfolio-website/static/media/react.c776c14607f920b203fc6fd76d081e44.svg",
+    "static/media/react.svg": "/portfolio-website/static/media/react.fdd3331d261ad6d5e1c92448737aa2aa.svg",
     "static/media/Checklist.svg": "/portfolio-website/static/media/Checklist.24410177eb5821c580d0ce4dbc072ba5.svg",
     "index.html": "/portfolio-website/index.html",
-    "main.56a1c4a9.css.map": "/portfolio-website/static/css/main.56a1c4a9.css.map",
-    "main.24d4be17.js.map": "/portfolio-website/static/js/main.24d4be17.js.map"
+    "main.f7728a2f.css.map": "/portfolio-website/static/css/main.f7728a2f.css.map",
+    "main.d9817521.js.map": "/portfolio-website/static/js/main.d9817521.js.map"
   },
   "entrypoints": [
-    "static/css/main.56a1c4a9.css",
-    "static/js/main.24d4be17.js"
+    "static/css/main.f7728a2f.css",
+    "static/js/main.d9817521.js"
   ]
 }
