@@ -23,13 +23,12 @@ const About = ({checked}) => {
                   <div className={`flex flex-col justify-center px-4 py-4 
                                 ${!checked ? 'text-lightgrey bg-whitesmoke' : 'text-white bg-lightergrey'}`}>
                         <p className="font-mono font-semibold text-base text-left pr-8 pl-2 sm:px-0">
-                              <p className="pt-4 pb-4 text-2xl">Hi 👋</p>
-                              I'm Prem Kumar. I am an undergraduate student from NIT Warangal, India. <br/>
-                              I have always fascinated about technology ever since I was a kid and  
-                              learning programming has helped me to appreciate it even more. <br/>
-                              I'm fluent in Python and JavaScript.
-                              My field of interests lie in both front-end and back-end developement.<br/>
-                              I like working with React.js and Node.js. I am always keen to explore any new technologies.
+                              <p className="pt-4 pb-4 text-2xl">Hi, I'm Prem Kumar.</p>
+                              I'm a Full-Stack Developer with two years of professional experience in designing, developing, and deploying high-quality web applications.
+                              <br/><br/>
+                              My journey in tech, which began at Metapointer Labs, has given me a solid foundation in building solutions from the ground up. I specialize in creating robust backend services with <strong>Node.js</strong> and <strong>LoopBack 4</strong>, and crafting intuitive user interfaces with <strong>Angular</strong>. I'm also experienced in deploying and managing cloud infrastructure on <strong>AWS</strong> and implementing CI/CD pipelines with <strong>Azure DevOps</strong>.
+                              <br/><br/>
+                              I'm passionate about writing clean, efficient code and I'm always excited to learn new technologies and take on challenging problems. I'm currently looking for a role where I can contribute to impactful projects and continue to grow as a developer.
                         </p>
                   </div>
                 </div>
